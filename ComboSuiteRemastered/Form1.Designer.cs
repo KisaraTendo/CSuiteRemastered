@@ -36,6 +36,7 @@
             this.MinimizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.TitleLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.MenuBarPanel = new System.Windows.Forms.Panel();
+            this.MiscTab = new Bunifu.Framework.UI.BunifuImageButton();
             this.ExtractTab = new Bunifu.Framework.UI.BunifuImageButton();
             this.MergeTab = new Bunifu.Framework.UI.BunifuImageButton();
             this.SplitTab = new Bunifu.Framework.UI.BunifuImageButton();
@@ -43,17 +44,16 @@
             this.MenuBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.MiscTab = new Bunifu.Framework.UI.BunifuImageButton();
             this.TitlePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
             this.MenuBarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MiscTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExtractTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MergeTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SplitTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DuplicatesTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MiscTab)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -106,9 +106,9 @@
             this.TitleLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.TitleLabel.Location = new System.Drawing.Point(3, 4);
             this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(311, 25);
+            this.TitleLabel.Size = new System.Drawing.Size(169, 25);
             this.TitleLabel.TabIndex = 0;
-            this.TitleLabel.Text = "ComboSuite Remastered [By Kisara]";
+            this.TitleLabel.Text = "CSuite Remastered";
             // 
             // MenuBarPanel
             // 
@@ -124,6 +124,19 @@
             this.MenuBarPanel.Name = "MenuBarPanel";
             this.MenuBarPanel.Size = new System.Drawing.Size(41, 458);
             this.MenuBarPanel.TabIndex = 1;
+            // 
+            // MiscTab
+            // 
+            this.MiscTab.Image = ((System.Drawing.Image)(resources.GetObject("MiscTab.Image")));
+            this.MiscTab.ImageActive = null;
+            this.MiscTab.Location = new System.Drawing.Point(3, 267);
+            this.MiscTab.Name = "MiscTab";
+            this.MiscTab.Size = new System.Drawing.Size(32, 32);
+            this.MiscTab.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.MiscTab.TabIndex = 6;
+            this.MiscTab.TabStop = false;
+            this.MiscTab.Zoom = 10;
+            this.MiscTab.Click += new System.EventHandler(this.MiscTab_Click);
             // 
             // ExtractTab
             // 
@@ -203,19 +216,6 @@
             this.MainPanel.Size = new System.Drawing.Size(762, 458);
             this.MainPanel.TabIndex = 2;
             // 
-            // MiscTab
-            // 
-            this.MiscTab.Image = ((System.Drawing.Image)(resources.GetObject("MiscTab.Image")));
-            this.MiscTab.ImageActive = null;
-            this.MiscTab.Location = new System.Drawing.Point(3, 267);
-            this.MiscTab.Name = "MiscTab";
-            this.MiscTab.Size = new System.Drawing.Size(32, 32);
-            this.MiscTab.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.MiscTab.TabIndex = 6;
-            this.MiscTab.TabStop = false;
-            this.MiscTab.Zoom = 10;
-            this.MiscTab.Click += new System.EventHandler(this.MiscTab_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,12 +235,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).EndInit();
             this.MenuBarPanel.ResumeLayout(false);
             this.MenuBarPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MiscTab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExtractTab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MergeTab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SplitTab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DuplicatesTab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MiscTab)).EndInit();
             this.ResumeLayout(false);
 
         }
